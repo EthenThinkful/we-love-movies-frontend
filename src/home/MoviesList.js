@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ErrorAlert from "../shared/ErrorAlert";
 import { listMovies } from "../utils/api";
+import './moviesList.css';
 
 function MoviesList() {
   const [movies, setMovies] = useState([]);
@@ -37,7 +38,8 @@ function MoviesList() {
       <ErrorAlert error={error} />
       <h2 className="font-poppins">Now Showing</h2>
       <hr />
-      <section className="row">{list}</section>
+      {movies.length === 0 ? <div><h2>Fetching data from the database...</h2><section className="loader"></section></div> : 
+      <section className="row">{list}</section>}
     </main>
   );
 }
