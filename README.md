@@ -1,6 +1,6 @@
 # WeLoveMovies Frontend Application
 
-This is the Front End Application for the WeLoveMovies project. Follow the instructions below.
+This is the Front End Application for the WeLoveMovies project.
 
 ## Installation
 
@@ -8,4 +8,3 @@ This is the Front End Application for the WeLoveMovies project. Follow the instr
 1. Run `npm install`.
 
 Use `npm start` to run the application. 
-Application is deployed on heroku
